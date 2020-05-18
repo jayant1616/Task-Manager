@@ -1,0 +1,33 @@
+//its a function to check whether the User exist in Database
+const mongoose = require('mongoose');
+
+const User = require('../models/users');
+
+    
+check('test_1','test@test.com');
+ async function check(name,email)
+{
+    const loaded_user = await User.findOne({name:name,email:email});
+    console.log(loaded_user,12)
+    return loaded_user;
+
+}
+ console.log(1)
+
+
+
+ async function create(name,email)
+{
+    result = await User.create({
+        name:name,
+        email:email,
+    })
+    return result;
+}
+
+
+/*
+module.exports({
+    create:create,
+    check:check,
+}) */
