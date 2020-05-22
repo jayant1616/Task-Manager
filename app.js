@@ -16,7 +16,7 @@ app.use(bodyparser.json());
 
 app.use(routes)
 
-mongoose.connect('mongodb+srv://jayant16:J1%23jayant16@cluster0-iko3n.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true }).
+mongoose.connect('database keys',{ useNewUrlParser: true }).
 then(result=>{
     console.log('Database connected')
     app.listen(8080,()=>{console.log(1)});//listening in port 8080.

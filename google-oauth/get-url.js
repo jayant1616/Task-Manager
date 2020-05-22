@@ -7,7 +7,7 @@ const URL = (request,response,next)=>{
     
 
 const stringifiedParams = queryString.stringify({
-  client_id: '547054902133-4q07uro394smk01eohudgdcaimkeqoqe.apps.googleusercontent.com',
+  client_id: 'client id',
   redirect_uri: 'http://localhost:8080/get-token',
   scope: [
     'https://www.googleapis.com/auth/userinfo.email',

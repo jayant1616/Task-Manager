@@ -34,7 +34,7 @@ async function getGoogleDriveFiles(access_token) {
           userId: result._id,
         },
         //secret key:
-        'JWTsecretkey1616',
+        '',
         {expiresIn:'1h'},
 
       )
@@ -56,7 +56,7 @@ async function getGoogleDriveFiles(access_token) {
                 userId: result._id,
               },
               //secret key:
-              'JWTsecretkey1616',
+              '',
               {expiresIn:'1h'},
       
             )

@@ -24,8 +24,8 @@ const get_token  = (request,response,next)=>{
         url: 'https://oauth2.googleapis.com/token',
         method: 'post',
         data: {
-          client_id: '547054902133-4q07uro394smk01eohudgdcaimkeqoqe.apps.googleusercontent.com',
-          client_secret: 'nuaNYYDoFsO7VBWCWEGVjqUz',
+          client_id: '',
+          client_secret: '',
           redirect_uri: 'http://localhost:8080/get-token',
           grant_type: 'authorization_code',
           code,
